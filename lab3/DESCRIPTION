@@ -7,6 +7,6 @@ Author: Björhag, Alexander; Lindner, Jakob
 Maintainer: <alebj452@student.liu.se>, <jakli758@student.liu.se>
 Description: Assignment for lab 3 in Advanced R programming
 License: GPL-3 + file LICENSE
-Depends: R (>= 3.5.0)
+Depends: R (>= 4.4.1)
 RoxygenNote: 7.3.2
 Encoding: UTF-8
