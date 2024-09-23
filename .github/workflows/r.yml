@@ -31,7 +31,8 @@ jobs:
         with:
           r-version: ${{ matrix.r-version }}
       - name: install packages
-        run: install.packages("devtools")
+        run: |
+          install.packages("devtools")
       - name: Run script
         run: Rscript -e 'devtools::build(pkg="~/lab3")'
       #- name: Install dependencies
