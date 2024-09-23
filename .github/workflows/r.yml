@@ -31,7 +31,7 @@ jobs:
         with:
           r-version: ${{ matrix.r-version }}
       - name: Run script
-        run: Rscript -e 'print("Hello World")'
+        run: Rscript -e 'devtools::build(pkg="~/lab3")'
       #- name: Install dependencies
       #  run: |
       #    install.packages(c("remotes", "rcmdcheck"))
