@@ -1,9 +1,15 @@
-#' Find the greatest common divisor of two numbers. 
-#' For further information about the Euclidean Algorithm see here: https://en.wikipedia.org/wiki/Euclidean
+#' @title Euclidean algorithm to find the greatest common divisor of two numbers. 
 #' 
-#' @param a A number.
-#' @param b A number.
-#' @returns The greatest common divisor 
+#' @description
+#' This function takes two numeric scalars or integers and find the greatest
+#' common divisor between them. 
+#' 
+#' @references For further information about the Euclidean algorithm see here: 
+#' \url{https://en.wikipedia.org/wiki/Euclidean}
+#' 
+#' @param a is a numeric scalar or integer.
+#' @param b is a numeric scalar or integer.
+#' @returns Will return the greatest common divisor between a and b  
 #' @examples
 #' euclidean(123612, 13892347912)
 #' euclidean(100, 1000)
