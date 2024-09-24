@@ -10,3 +10,6 @@ License: GPL-3 + file LICENSE
 Depends: R (>= 4.4.0)
 RoxygenNote: 7.3.2
 Encoding: UTF-8
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
