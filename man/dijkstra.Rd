@@ -2,28 +2,32 @@
 % Please edit documentation in R/Dijkstra.R
 \name{dijkstra}
 \alias{dijkstra}
-\title{Calculates the shortest path from the initial node to every other node in the graph. 
-For further information about the Euclidean Algorithm see here: https://en.wikipedia.org/wiki/Dijkstra%27s}
+\title{Dijkstra´s algorithm that calculate the shortest distance from two nodes.}
 \usage{
 dijkstra(graph, init_node)
 }
 \arguments{
-\item{graph}{A graph that has.}
+\item{graph}{A data.frame with three variables "v1", "v2" and "w" where "v1"
+is the start node and "v2" is the end node and "w" represent the distance
+between "v1" and "v2".}
 
-\item{init_node}{number.}
+\item{init_node}{is a numeric scalar that exist in the graph and is the initial node.}
 }
 \value{
-The greatest common divisor
+Will return a vector with the distance from the initial node to each node in the graph in index order.
 }
 \description{
-Calculates the shortest path from the initial node to every other node in the graph. 
-For further information about the Euclidean Algorithm see here: https://en.wikipedia.org/wiki/Dijkstra%27s
+Uses Dijkstra´s algorithm to calculate the shortest path from a
+  given initial node to every other node in the graph. The graph is a data
+  frame containing the edges between nodes and the corresponding weights.
 }
 \examples{
-wiki_graph <-
-data.frame(v1=c(1,1,1,2,2,2,3,3,3,3,4,4,4,5,5,6,6,6),
+graph <- data.frame(v1=c(1,1,1,2,2,2,3,3,3,3,4,4,4,5,5,6,6,6),
 v2=c(2,3,6,1,3,4,1,2,4,6,2,3,5,4,6,1,3,5),
 w=c(7,9,14,7,10,15,9,10,11,2,15,11,6,6,9,14,2,9))
 dijkstra(wiki_graph, 1)
-dijkstra(wiki_graph, 3)
+}
+\references{
+For more information about the Dijkstra's algorithm see here:
+  \url{https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}
 }
