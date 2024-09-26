@@ -4,7 +4,7 @@
 #' represents one edge between two nodes.
 #' 
 #' The graph is taken from the wikipedia page about the dijkstra algorithm: 
-#' <https://en.wikipedia.org/wiki/Dijkstra's_algorithm>
+#' \url{https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}
 #'
 #' @format ## `wiki_graph`
 #' A data frame with 18 rows and 3 columns:
