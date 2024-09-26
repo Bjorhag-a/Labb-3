@@ -20,4 +20,8 @@ wiki_graph
 A dataset representing a graph with its nodes and weighted edges. Every row
 represents one edge between two nodes.
 }
+\details{
+The graph is taken from the wikipedia page about the dijkstra algorithm: 
+\url{https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}
+}
 \keyword{datasets}
